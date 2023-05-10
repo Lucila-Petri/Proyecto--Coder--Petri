@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul { 
+    list-style: none;
+}
+
+/* color fondo opción 1 #15006d
+opción nav bar 1  #9a6eff */
+
+.header {
+    background-color: #bfb8da;
+    padding: 30px 20px;
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__container h3 a { 
+    color: #100000;
+}
+.header__container-navbar { 
+    display: none;
+}
+
+.header__container-navbar li {
+    margin: 0 15px;
+}
+
+.header__container-navbar li a {
+    color: #15006d ;
+    font-weight: bold;
+}
+
+/* header movile */
+.header__container-navbar-mobile {
+    display: flex;
+}
+
+.header__container-navbar-mobile span { 
+    color: #15006d;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Footer, idealmente hacer con flex */
+footer {
+    background-color: #bfb8da;
+    padding: 30px 20px 20px 10px;
+}
+
+.footer__container { 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__container h3 a {
+    color: #100000;
+}
+
+.footer__container-navbar { 
+    display: flex;
+}
+
+.footer__container-navbar li {
+    margin: 0 15px;
+}
+
+.footer__container-navbar li a {
+    color: #15006d ;
+    font-weight: bold;
+}
+
+
+/* Hero */
+/* esta clase va a tener solo estos parámetros
+Elementos hijos */
+.grid-item {
+    background-color: #33539e;
+    border: 5px solid #bfb8da;
+    font-size: 30px;
+    color: #100000;
+    
+}
+/* contenedor padre */
+.grid-container {
+    background-color: #33539e;
+    height: 500px;
+    display: grid;
+
+/* columnas */
+grid-template-columns: 2fr 2fr 2fr 2fr;
+
+/* filas */
+grid-template-rows: 1fr;
+justify-items: center;
+align-items: center;
+}
+
+/* Tarjetas */
+.ultimas-noticias {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ultimas-noticias-card { 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+.card__header img { 
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.card__title { 
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.card__link { 
+    background-color: #bfb8da;
+    color: #15006d;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.ultimas-tendencias {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ultimas-tendencias-card { 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.ultimas-tendencias-title {
+    padding: 0px 10px;
+    color: #15006d;
+    font-weight: bold;
+}
+
+.card__Tendencias {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+.card__header__tendencias img { 
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.card__title__tendencias { 
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.card__link__Tendencias { 
+    background-color: #bfb8da;
+    color: #15006d;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+/* elemento padre */
+.flexbox { 
+    background-color: #33539e;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+/* flex wrap nos permite controlar los contenidos desbordados 
+flex-wrap: wrap */
+justify-content: space-around;
+
+}
+/* elemento hijo */
+.box { 
+    background-color: #33539e;
+    border: 5px solid #33539e;
+    color: #15006d;
+    padding: 20px;
+    font-size: 30px;
+    background-image: url("noticia.png");
+}
+
+.grid-container-imagenes { 
+    background-color: #33539e;
+    height: 500px;
+    display: grid;
+
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows:2fr;
+    justify-items: auto;
+    
+}
+
+.grid-item-imagenes { 
+    background-color: white;
+    border: 2px solid #bfb8da;
+
+}
+
+/* Index banner */
+.hero__index h1 {
+    background-color: #5e5ebb;
+    padding: 40px 20px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+ }
+
+ .hero__index p {
+    background-color: #5e5ebb;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+ }
+
+
+/* Página noticias - HERO en noticias 2, 3 y 4*/
+.hero { 
+    background-color: #33539e;
+    padding: 60px 20px;
+    color: white;
+}
+
+.hero__container { 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+}
+
+.hero_color2 { 
+    background-color: #bfb8da;
+    padding: 60px 20px;
+    color: #15006d;
+}
+
+.hero__container_color2 { 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+}
+
+/* nota principal Texto sobre imagen */
+.container__principal { 
+    background-color: #33539e;
+}
+.container__principal img { 
+   width: 100%;
+   height: 100%;
+
+}
+.container__principal h1 {
+    font-size: 3rem;
+    color: #15006d;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .header__container-navbar {
+        display: flex;
+    }
+    
+    .header__container-navbar-mobile {
+        display: none;
+    }
+
+    .ultimas-noticias-card { 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ultimas-tendencias-card { 
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (mid-width: 992px) {
+    .ultimas-noticias-card { 
+        grid-template-columns: repeat(3, 1fr);}
+ 
+        .ultimas-tendencias-card {
+            grid-template-columns: repeat(3, 1fr);
+        }
+}
+    
+
+

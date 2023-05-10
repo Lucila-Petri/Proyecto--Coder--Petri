@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Página principal</title>
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!-- no hay problema que la etiqueta y que la clase tengan el mismo nombre, header -->
+    <header class="header">
+        <div class="header__container">
+            <h3> <a href="./index.html"> Logo </a></h3>
+            <!-- Menú de navegación se representa nav, luego ul. -->
+            <nav>
+                <!-- desktop -->
+                <ul class="header__container-navbar">
+                    <li> <a href="./Pages/Tendencias.html"> Tendencias</a></li>
+                    <li> <a href="./Pages/Noticias.html"> Noticias</a></li>
+                    <li> <a href="./Pages/Crearcuenta.html"> Crear cuenta </a></li>
+                    <li> <a href="./Pages/iniciarsesion.html"> Iniciar sesión </a></li>
+                </ul>
+
+                <!-- mobile -->
+                <div class="header__container-navbar-mobile">
+                    <span> <a href="./Pages/Tendencias.html"></a> Tendencias </span>
+                    <span> <a href="./Pages/Noticias.html"></a> Noticias </span>
+                    <span> <a href="./Pages/Crearcuenta.html"></a> Crear cuenta </span>
+                    <span> <a href="./Pages/iniciarsesion.html"></a> Iniciar sesión</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- clase 6, últimos 20 min, Hero -->
+       
+        <section class="hero__index">
+            <div class="hero__container__index">
+                <div class="hero__container__info">
+                    <h1>La mejor plataforma para saber qué ver</h1>
+                    <p> Encuentra las mejores películas y series, aprovecha al máximo todas tus servicios de streaming.</p>
+                    <p>Comparte tus historias favoritas con tus amigos, crea listas y guarda lo que deseas ver.</p>
+                    <p> Conviértete en un cinéfilo sin ningún esfuerzo. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- no tengo idea de cómo poder hacer esto responsive -->
+        <section class="grid-container">
+            <div class="grid-item"> Género </div>
+            <div class="grid-item"> Duración </div>
+            <div class="grid-item"> Plataforma </div>
+            <div class="grid-item"> Buscar </div>
+        </section>
+
+        <h2> <a href="./Pages/Tendencias.html"></a> Lo más visto</h2>
+        <section class="grid-container-imagenes">
+            <div class="grid-item-imagenes"> Imagen 1
+                <img src="" alt="">
+            </div>
+            <div class="grid-item-imagenes"> Imagen 2 </div>
+            <div class="grid-item-imagenes"> Imagen 3</div>
+            <div class="grid-item-imagenes"> Imagen 4 </div>
+        </section>
+        
+        <section class="ultimas-noticias">
+            <h3 class="ultimas-noticias-title">Últimas noticias </h3>
+            <div class="ultimas-noticias-card">
+                        <!-- Tarjeta 1 --> 
+                    <article class="card">
+                         <div class="card__header">
+                                <small>Sing</small>
+                                <img src="./Assets/Imágenes últimas noticias - index/Sing-tendencias.jpg" alt="Poster Sing">
+                            </div>
+                            <h2 class="card__title">Fin de semana animado</h2>
+                            <a href="" class="card__link"> Saber más </a>
+                        </article>
+                <!-- Tarjeta 2 -->
+                <article class="card">
+                    <div class="card__header">
+                        <small>Sing</small>
+                        <img src="./Assets/Imágenes últimas noticias - index/Aquietplace-tendencias.jpg" alt="Poster A quiet place">
+                    </div>
+                    <h2 class="card__title">Fin de semana de terror</h2>
+                    <a href="" class="card__link"> Saber más </a>
+                </article>
+                <!-- Tarjeta 3 -->
+                <article class="card">
+                    <div class="card__header">
+                        <small>Sing</small>
+                        <img src="./Assets/Imágenes últimas noticias - index/Shawshank-tendencias.jpg" alt="Poster Shawshank">
+                    </div>
+                    <h2 class="card__title">Fin de semana a puro clásicos</h2>
+                    <a href="" class="card__link"> Saber más </a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <!-- hacerlo con flex  -->
+       <div class="footer__container">
+        <h3> Logo </a></h3>
+        <nav>
+            <ul class="footer__container-navbar">
+                <li> Quiénes somos </a></li>
+                <li> Contacto </a></li>
+                <li>  Ubicación </a></li>
+            </ul>
+       </div>
+    </footer>
+</body>
+</html>
