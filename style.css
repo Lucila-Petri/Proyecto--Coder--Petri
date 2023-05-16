@@ -112,7 +112,50 @@ justify-items: center;
 align-items: center;
 }
 
-/* Tarjetas */
+/* Lo más visto - Tarjetas */
+.visto { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.visto_card { 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px ;
+}
+
+.lo-mas-visto_card { 
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6); 
+}
+
+.visto_header img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+ }
+
+ .visto_title { 
+    margin-bottom: 15px;
+    margin-top: 40px;
+    font-size: 35px;
+ }
+
+ .visto-card_link { 
+    background-color: #bfb8da;
+    color: #15006d;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+ }
+
+/* Últimas noticias - Tarjetas */
 .ultimas-noticias {
     max-width: 1200px;
     margin: 0 auto;
@@ -122,6 +165,12 @@ align-items: center;
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
+}
+
+.ultimas-noticias-title { 
+    margin-bottom: 15px;
+    margin-top: 40px;
+    font-size: 35px;
 }
 
 .card {
@@ -141,6 +190,7 @@ align-items: center;
 .card__title { 
     margin-bottom: 20px;
     font-size: 20px;
+
 }
 
 .card__link { 
@@ -154,6 +204,7 @@ align-items: center;
     text-align: center;
 }
 
+/* Página tendencias */
 .ultimas-tendencias {
     max-width: 1200px;
     margin: 0 auto;
@@ -318,20 +369,28 @@ justify-content: space-around;
         display: none;
     }
 
+    
     .ultimas-noticias-card { 
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .ultimas-tendencias-card { 
         grid-template-columns: repeat(5, 1fr);
     }
+
+    .visto_card { 
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (mid-width: 992px) {
+    .visto_card { 
+        grid-template-columns: repeat(3, 1fr);
+    }
     .ultimas-noticias-card { 
         grid-template-columns: repeat(3, 1fr);}
  
         .ultimas-tendencias-card {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(1, 1fr);
         }
 }
     
