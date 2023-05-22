@@ -1,0 +1,25 @@
+// anidamientos de Sass //
+
+.statistics {
+    margin-top: 80px;
+    padding: 120px 20px;
+    background-image: url("../Assets/imágenesnoticias/noticia.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+        &__container { 
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            &-item { 
+                color: #15006d;
+                font-size: 40px;
+                text-align: center;
+                margin: 30px 0;
+    }
+    }
+}
