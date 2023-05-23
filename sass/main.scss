@@ -30,7 +30,6 @@
     }
 }
 
-
 // anidamientos de Sass //
 
 .statistics {
@@ -57,6 +56,36 @@
     }
 }
 
+//   intento hero noticia 2 con Sass //
+
+.hero_2 { 
+    margin-top: 0px;
+    padding: 120px 20px;
+
+    
+    &__container { 
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        &-img { 
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: 450px 250px;
+            background-attachment: scroll;
+        }
+
+        &-text { 
+            color: #15006d;
+            font-size: 40px;
+            text-align: right;
+            margin: 30px 0;
+        }
+    }
+
+}
+
 @media (min-with: 576){
     .principal { 
         flex-direction: row;
@@ -65,6 +94,30 @@
   
     .statistics { 
         flex-direction: row;
+        justify-content: space-around;
+    }
+  }
+
+  @media (min-width: 768px) { 
+    .principal { 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .statistics { 
+        flex-direction: row;
+        justify-content: space-around;
+    }
+  }
+
+  @media (mid-width: 992px) { 
+    .principal { 
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .statistics { 
+        flex-direction: column;
         justify-content: space-around;
     }
   }

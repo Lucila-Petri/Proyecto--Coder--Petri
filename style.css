@@ -313,32 +313,41 @@ justify-content: space-around;
 .hero { 
     background-color: #33539e;
     padding: 60px 20px;
-    color: white;
 }
 
 .hero__container { 
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
 
+.hero__container-text { 
+    color: white;
+    text-align: justify;
+    margin-top: 50px;
+}
+/* 
 .hero_color2 { 
     background-color: #bfb8da;
     padding: 60px 20px;
-    color: #15006d;
 }
 
 .hero__container_color2 { 
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    display: flex;
+    flex-direction: row;
     gap: 50px;
 }
+
+.hero__container_color2-text { 
+    color: #15006d;
+    text-align: justify;
+    margin-top: 50px;
+} */
+
 
 /* nota principal Texto sobre imagen */
 .container__principal { 
@@ -370,6 +379,7 @@ justify-content: space-around;
     .header div span { 
         display: none;
     }
+
 
 }
 @media (min-width: 768px) {
@@ -404,7 +414,6 @@ justify-content: space-around;
     }
 
     }
-
 
 @media (mid-width: 992px) {
     .visto_card { 
