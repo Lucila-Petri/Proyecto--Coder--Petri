@@ -1,3 +1,36 @@
+// noticia principal - página noticias //
+
+.principal { 
+    margin-top: 80px;
+    padding: 120px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__container { 
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        &-img { 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        &-item { 
+            color: #15006d;
+            font-size: 40px;
+            text-align: center;
+            margin: 30px 0;
+        }
+    }
+}
+
+
 // anidamientos de Sass //
 
 .statistics {
@@ -23,3 +56,15 @@
     }
     }
 }
+
+@media (min-with: 576){
+    .principal { 
+        flex-direction: row;
+        justify-content: space-around;
+    }
+  
+    .statistics { 
+        flex-direction: row;
+        justify-content: space-around;
+    }
+  }
