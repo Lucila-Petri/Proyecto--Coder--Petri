@@ -58,7 +58,7 @@
     justify-content: space-around;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .principal {
     flex-direction: row;
     justify-content: space-between;
@@ -77,6 +77,18 @@
     flex-direction: column;
     justify-content: space-around;
   }
+}
+.footer {
+  background-color: #33539e;
+  color: #15006d;
+  padding: 60px 20px;
+}
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */
