@@ -328,13 +328,13 @@ justify-content: space-around;
     text-align: justify;
     margin-top: 50px;
 }
-/* 
-.hero_color2 { 
+
+.hero_2 { 
     background-color: #bfb8da;
     padding: 60px 20px;
 }
 
-.hero__container_color2 { 
+.hero_2__container { 
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -342,11 +342,11 @@ justify-content: space-around;
     gap: 50px;
 }
 
-.hero__container_color2-text { 
+.hero_2__container-text { 
     color: #15006d;
     text-align: justify;
     margin-top: 50px;
-} */
+} 
 
 
 /* nota principal Texto sobre imagen */
