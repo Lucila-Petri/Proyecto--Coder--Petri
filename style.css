@@ -86,7 +86,7 @@ footer {
     font-weight: bold;
 }*/
 
-.footer {
+/* .footer {
     background-color: #bfb8da;
     color: #15006d;
     padding: 50px 20px;
@@ -112,7 +112,7 @@ footer {
   }
   .footer__container-list li a:hover {
     color: #15006d;
-  }
+  } */
 
 
 /* Hero */
@@ -236,6 +236,7 @@ align-items: center;
 .ultimas-tendencias {
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .ultimas-tendencias-card { 

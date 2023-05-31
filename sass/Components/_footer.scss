@@ -3,6 +3,7 @@
     background-color: #bfb8da;
     color: #15006d;
     padding: 60px 20px;
+    margin-top: 20px;
 
     &__container { 
         max-width: 1200px;
@@ -30,6 +31,25 @@
                 }
             }
             
+        }
+        &-rrss { 
+            $socialIcons: (
+                whatsapp: #15006d, 
+                instagram: #ffffff,
+                twitter: #15006d
+            );
+
+            @each $socialName, $socialColors in $socialIcons {
+                .#{$socialName} { 
+                    color: #ffffff;
+                    font-size: 30px;
+
+
+                    &:hover { 
+                        color: $socialColors;
+                    }
+                }
+            }
         }
     }
 }
