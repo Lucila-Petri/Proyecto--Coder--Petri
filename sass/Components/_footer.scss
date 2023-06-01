@@ -9,7 +9,7 @@
         max-width: 1200px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         gap: 50px;
 
         h4 { 
@@ -30,19 +30,18 @@
                 }
                 }
             }
-            
         }
         &-rrss { 
             $socialIcons: (
-                whatsapp: #15006d, 
-                instagram: #ffffff,
-                twitter: #15006d
+                whatsapp:  #ffffff, 
+                instagram:  #ffffff, 
+                twitter: #ffffff
             );
 
             @each $socialName, $socialColors in $socialIcons {
                 .#{$socialName} { 
-                    color: #ffffff;
-                    font-size: 30px;
+                    color: #15006d;
+                    font-size: 20px;
 
 
                     &:hover { 
