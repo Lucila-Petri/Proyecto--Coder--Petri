@@ -55,74 +55,14 @@ opción nav bar 1  #9a6eff */
     margin: 0 10px;
 }
 
-/* Footer, idealmente hacer con flex 
-footer {
-    background-color: #bfb8da;
-    padding: 30px 20px 20px 10px;
-}
-
-.footer__container { 
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer__container h3 a {
-    color: #100000;
-}
-
-.footer__container-navbar { 
-    display: flex;
-}
-
-.footer__container-navbar li {
-    margin: 0 15px;
-}
-
-.footer__container-navbar li a {
-    color: #15006d ;
-    font-weight: bold;
-}*/
-
-/* .footer {
-    background-color: #bfb8da;
-    color: #15006d;
-    padding: 50px 20px;
-  }
-  .footer__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-  .footer__container h4 {
-    color: #15006d;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  .footer__container-list li {
-    margin: 10px 0;
-  }
-  .footer__container-list li a {
-    color: white;
-  }
-  .footer__container-list li a:hover {
-    color: #15006d;
-  } */
-
-
 /* Hero */
 /* esta clase va a tener solo estos parámetros
-Elementos hijos */
+Elementos hijos 
+border: 5px solid #bfb8da;*/
 .grid-item {
     background-color: #33539e;
-    border: 5px solid #bfb8da;
-    font-size: 30px;
-    color: #100000;
+    font-size: 20px;
+    color: #fff;
     
 }
 /* contenedor padre */
@@ -409,6 +349,14 @@ justify-content: space-around;
         display: none;
     }
 
+    .grid-container { 
+       
+        grid-template-rows: 4fr;
+        justify-items: center;
+        align-items: center;
+    
+    }
+
 }
 @media (min-width: 768px) {
     .header__container-navbar {
@@ -425,6 +373,7 @@ justify-content: space-around;
     .header__container-navbar-mobile {
         display: none;
     }
+
     
     .ultimas-noticias-card { 
         grid-template-columns: repeat(3, 1fr);

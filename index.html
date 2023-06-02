@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Página principal</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="../Assets/ícono final página web.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Assets/ícono final página web.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -55,10 +55,42 @@
         <!-- no tengo idea de cómo poder hacer esto responsive -->
         <!-- una buena forma es hacerlo con form, chequear -->
         <section class="grid-container">
-            <div class="grid-item"> Género </div>
-            <div class="grid-item"> Duración </div>
-            <div class="grid-item"> Plataforma </div>
-            <div class="grid-item"> Buscar </div>
+            <div class="grid-item"> 
+                <form action="">
+                    <label for="genero"> Género </label>
+                    <select name="" id="genero">
+                        <option value="drama"> Seleccionar el género </option>
+                        <option value="drama"> Drama </option>
+                        <option value="comedia"> Comedia </option>
+                        <option value="terror"> Terror </option>
+                    </select>
+                </form>     
+            </div>
+            <div class="grid-item"> 
+                <form action="">
+                    <label for="genero"> Duración </label>
+                    <select name="" id="genero">
+                        <option value="drama"> Seleccionar la duración deseada </option>
+                        <option value="drama"> Hora y media </option>
+                        <option value="comedia"> Dos horas </option>
+                        <option value="terror"> Dos horas y media </option>
+                    </select>
+                </form>     
+            </div>
+            <div class="grid-item"> 
+                <form action="">
+                    <label for="genero"> Plataforma </label>
+                    <select name="" id="genero">
+                        <option value="drama"> Seleccionar una plataforma </option>
+                        <option value="drama"> Netflix </option>
+                        <option value="comedia"> HBO Max </option>
+                        <option value="terror"> Amazon Prime Video </option>
+                    </select>
+                </form>     
+            </div>
+            <div class="grid-item"> 
+                <button> Buscar </button>
+            </div>
         </section>
 
         <!-- LO MÁS VISTO -->
