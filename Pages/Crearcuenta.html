@@ -44,33 +44,29 @@
     </section>
 
     <main>
-        <section>
+        <section class="formulario">
             <!-- cuando cree el formulario usar la pseudoclase  -->
             <form action="" method="" enctype="">
-                <label for="name"> Nombre y apellido</label>
-                <input type="text" id="name" />
+                <h4>Crea tu cuenta en Mogle</h4>
+                <label class="formulario__labels" for="name"> Nombre y apellido</label>
+                <input class="formulario__controles" type="text" id="name" />
 
-                <label for="username"> Usuario </label>
-                <input type="text" id="username" />
+                <label class="formulario__labels" for="username"> Usuario </label>
+                <input class="formulario__controles" type="text" id="username" />
 
-                <label for="email"> Correo electrónico </label>
-                <input type="email" id="email" />
+                <label class="formulario__labels" for="email"> Correo electrónico </label>
+                <input class="formulario__controles" type="email" id="email" />
 
-                <label for="password"> Contraseña </label>
-                <input type="password" id="password">
-
-                <input type="checkbox" id="check"/> 
-                <label for="check"> He leído y acepto los términos y condiciones. </label>
-
-                <input type="checkbox" id="check" /> 
-                <label for="check"> Me gustaría recibir notificaciones de Mogle. </label>
+                <label class="formulario__labels" for="password"> Contraseña </label>
+                <input class="formulario__controles" type="password" id="password">
 
                 <input type="checkbox" id="check"/> 
-                <label for="check"> Recordarme. </label>
+                <label class="formulario__check" for="check"> He leído y acepto los términos y condiciones. </label>
 
-                <button> Registrarse </button>
-                <button type="reset"> Cancelar </button>
+                <button class="formulario__botones"> Registrarse </button>
+                <button class="formulario__botones" type="reset"> Cancelar </button>
                 
+                <p>¿Ya tienes cuenta? <a href=""> Iniciar sesión </a></p>
             </form>
         </section>
     </main>

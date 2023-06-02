@@ -349,13 +349,6 @@ justify-content: space-around;
         display: none;
     }
 
-    .grid-container { 
-       
-        grid-template-rows: 4fr;
-        justify-items: center;
-        align-items: center;
-    
-    }
 
 }
 @media (min-width: 768px) {
@@ -373,7 +366,6 @@ justify-content: space-around;
     .header__container-navbar-mobile {
         display: none;
     }
-
     
     .ultimas-noticias-card { 
         grid-template-columns: repeat(3, 1fr);
