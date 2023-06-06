@@ -55,16 +55,10 @@ opción nav bar 1  #9a6eff */
     margin: 0 10px;
 }
 
-/* Hero */
-/* esta clase va a tener solo estos parámetros
-Elementos hijos 
-border: 5px solid #bfb8da;
-
-Elementos buscador grid-template-columns: repeat(auto-fill, minmax (240px, 1fr));*/
+/* Buscador index*/
 .grid-container { 
     display: grid;
     grid-template-columns: 1fr;
-
 }
 
 .grid-item { 
@@ -121,8 +115,6 @@ Elementos buscador grid-template-columns: repeat(auto-fill, minmax (240px, 1fr))
 .grid-item select { 
     margin-top: 15px;
 } */
-
-
 
 
 /* Lo más visto - Tarjetas */
@@ -327,7 +319,9 @@ justify-content: space-around;
  }
 
 
-/* Página noticias - HERO en noticias 2, 3 y 4*/
+/* Página noticias - noticias 2, 3 y 4
+
+    flex-direction: column; */
 .hero { 
     background-color: #33539e;
     padding: 40px 20px;
@@ -337,22 +331,22 @@ justify-content: space-around;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .hero__container-text { 
     color: white;
     text-align: justify;
-    text-size-adjust: 100%;
-    flex-wrap: wrap;
     width: 100%;
+    height: 100%;
+    font-size: 16px;
 }
 
 .hero__container img { 
-    width: 350px;
-    margin-right: 15px;
+    width: 150px;
+    margin-right: 10px;
     flex-wrap: wrap;
 }
 
@@ -396,6 +390,12 @@ justify-content: space-around;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
 
+    }
+
+    .hero__container img { 
+        width: 250px;
+        margin-right: 15px;
+        flex-wrap: wrap;
     }
 
 }
