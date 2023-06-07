@@ -3,6 +3,8 @@
 .header { 
     background-color: #bfb8da;
     padding: 30px 20px;
+    position: sticky;
+    top: 0;
 
     &__container { 
         max-width: 1200px;
@@ -30,12 +32,40 @@
             &-mobile { 
                 display: flex;
 
-                span { 
+                i { 
                     color: #15006d;
-                    font-weight: bold;
-                    margin: 0 10px;
+                    font-size: 30px;
+                }
+
+                ul { 
+                    position: absolute;
+                    left: 0;
+                    top: 80px;
+                    width: 100%;
+                    background-color: #bfb8da;
+                    display: none;
+
+                    li { 
+                        padding: 20px 0;
+                        text-align: center;
+
+                        a { 
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+
+                        &:nth-child(even) { 
+                            background-color: #9e91d3;
+                        }
+                    }
+                }
+
+                &:hover ul { 
+                    display: block;
                 }
             }
+
+        
         }
 
     }

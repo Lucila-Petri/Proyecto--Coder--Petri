@@ -72,6 +72,8 @@ p {
 .header {
   background-color: #bfb8da;
   padding: 30px 20px;
+  position: sticky;
+  top: 0;
 }
 .header__container {
   max-width: 1200px;
@@ -96,10 +98,31 @@ p {
 .header__container-navbar-mobile {
   display: flex;
 }
-.header__container-navbar-mobile span {
+.header__container-navbar-mobile i {
   color: #15006d;
+  font-size: 30px;
+}
+.header__container-navbar-mobile ul {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 100%;
+  background-color: #bfb8da;
+  display: none;
+}
+.header__container-navbar-mobile ul li {
+  padding: 20px 0;
+  text-align: center;
+}
+.header__container-navbar-mobile ul li a {
   font-weight: bold;
-  margin: 0 10px;
+  font-size: 20px;
+}
+.header__container-navbar-mobile ul li:nth-child(even) {
+  background-color: #9e91d3;
+}
+.header__container-navbar-mobile:hover ul {
+  display: block;
 }
 
 @media (min-width: 576px) {
