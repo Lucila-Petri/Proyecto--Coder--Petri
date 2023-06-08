@@ -44,7 +44,6 @@ opción nav bar 1  #9a6eff */
     font-weight: bold;
 }
 
-
 /* header movile */
 .header__container-navbar-mobile {
     display: flex;
@@ -56,62 +55,67 @@ opción nav bar 1  #9a6eff */
     margin: 0 10px;
 }
 
-/* Footer, idealmente hacer con flex */
-footer {
-    background-color: #bfb8da;
-    padding: 30px 20px 20px 10px;
+/* Buscador index*/
+.grid-container { 
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.footer__container { 
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer__container h3 a {
-    color: #100000;
-}
-
-.footer__container-navbar { 
-    display: flex;
-}
-
-.footer__container-navbar li {
-    margin: 0 15px;
-}
-
-.footer__container-navbar li a {
-    color: #15006d ;
-    font-weight: bold;
-}
-
-
-/* Hero */
-/* esta clase va a tener solo estos parámetros
-Elementos hijos */
-.grid-item {
+.grid-item { 
     background-color: #33539e;
-    border: 5px solid #bfb8da;
-    font-size: 30px;
-    color: #100000;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20ox;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item label {
+    margin-left: 25px;
+    padding: 20px;
+}
+
+.grid-item select { 
+    margin-top: 25px;
+} 
+
+.grid-container button { 
+    font-size: 16px;
+    color: #fff;
+    
+    background: #15006d;
+    border: none;
+    padding: 12px;
+    margin: 12px 5px;
+    margin-left: 20px;
+}
+
+.grid-container button:hover { 
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* prueba  .grid-item {
+    background-color: #33539e;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20ox;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
-/* contenedor padre */
-.grid-container {
-    background-color: #33539e;
-    height: 500px;
-    display: grid;
 
-/* columnas */
-grid-template-columns: 2fr 2fr 2fr 2fr;
-
-/* filas */
-grid-template-rows: 1fr;
-justify-items: center;
-align-items: center;
+.grid-item label { 
+    margin-top: 15px;
+    margin-right: 15px;
 }
+
+.grid-item select { 
+    margin-top: 15px;
+} */
+
 
 /* Lo más visto - Tarjetas */
 .visto { 
@@ -175,7 +179,7 @@ align-items: center;
 }
 
 .card {
-    background-color: white;
+    background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
@@ -209,6 +213,16 @@ align-items: center;
 .ultimas-tendencias {
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.ultimas-tendencias-title {
+    padding: 0px 10px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 35px;
 }
 
 .ultimas-tendencias-card { 
@@ -217,14 +231,8 @@ align-items: center;
     gap: 50px;
 }
 
-.ultimas-tendencias-title {
-    padding: 0px 10px;
-    color: #15006d;
-    font-weight: bold;
-}
-
-.card__Tendencias {
-    background-color: white;
+.card__tendencias {
+    background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
@@ -259,6 +267,7 @@ align-items: center;
     height: 500px;
     display: flex;
     flex-direction: column;
+    
 
 /* flex wrap nos permite controlar los contenidos desbordados 
 flex-wrap: wrap */
@@ -310,36 +319,37 @@ justify-content: space-around;
  }
 
 
-/* Página noticias - HERO en noticias 2, 3 y 4*/
+/* Página noticias - noticias 2, 3 y 4
+
+    flex-direction: column; */
 .hero { 
     background-color: #33539e;
-    padding: 60px 20px;
-    color: white;
+    padding: 40px 20px;
 }
 
 .hero__container { 
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 20px;
     align-items: center;
-    gap: 50px;
+    flex-wrap: wrap;
 }
 
-.hero_color2 { 
-    background-color: #bfb8da;
-    padding: 60px 20px;
-    color: #15006d;
+.hero__container-text { 
+    color: white;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
 }
 
-.hero__container_color2 { 
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 50px;
+.hero__container img { 
+    width: 150px;
+    margin-right: 10px;
+    flex-wrap: wrap;
 }
+
 
 /* nota principal Texto sobre imagen */
 .container__principal { 
@@ -372,12 +382,28 @@ justify-content: space-around;
         display: none;
     }
 
+    .ultimas-tendencias-card { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-container { 
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+
+    }
+
+    .hero__container img { 
+        width: 250px;
+        margin-right: 15px;
+        flex-wrap: wrap;
+    }
+
 }
+
 @media (min-width: 768px) {
     .header__container-navbar {
         display: flex;
     }
-
 
  .header__container-navbar li a:hover { 
     color: #fff;
@@ -406,6 +432,9 @@ justify-content: space-around;
 
     }
 
+    .footer__container { 
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 @media (mid-width: 992px) {
     .visto_card { 
@@ -417,6 +446,7 @@ justify-content: space-around;
         .ultimas-tendencias-card {
             grid-template-columns: repeat(1, 1fr);
         }
+
 }
     
 

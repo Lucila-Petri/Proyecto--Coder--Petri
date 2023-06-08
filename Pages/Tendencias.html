@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Tendencias </title>
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../Assets/ícono final página web.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/main.css" />
 </head>
-<body>
-    <section>
+<body class="body__crearcuenta">
         <header class="header">
             <div class="header__container">
-                <h3> <a href="./index.html"> Logo </a></h3>
+                <h3> <a href="../index.html"> Mogle </a></h3>
                 <!-- Menú de navegación se representa nav, luego ul. -->
                 <nav>
                     <!-- desktop -->
@@ -23,20 +26,21 @@
                         <li> <a href="../Pages/misfavoritos.html"> Mis favoritos </a></li>
                     </ul>
 
-                     <!-- mobile 
-                    <div class="header__container-navbar-mobile">
-                    <span> <a href="../Pages/Tendencias.html"></a> Tendencias </span>
-                    <span> <a href="../Pages/Noticias.html"></a> Noticias </span>
-                    <span> <a href="../Pages/Crearcuenta.html"></a> Crear cuenta </span>
-                    <span> <a href="../Pages/misfavoritos.html"></a> Iniciar sesión</span>
-                </div>-->
-                
-                <span> <img src="../Assets/Menú responsive mobile - resize.png" alt="ícono menú">
+        <!-- mobile -->
+        <div class="header__container-navbar-mobile"> 
+            <i class="bi bi-list"></i>
+            <ul>
+                <li> <a href="../Pages/Tendencias.html"> Tendencias</a></li>
+                <li> <a href="../Pages/Noticias.html"> Noticias</a></li>
+                <li> <a href="../Pages/Crearcuenta.html"> Crear cuenta </a></li>
+                <li> <a href="../Pages/misfavoritos.html"> Mis favoritos </a></li>
+            </ul>
+        </div>
                 
                 </nav>
             </div>
         </header>
-    </section>
+
     <main>
             <!-- <h1>Me conviene usar flex para las noticias 2,3 y 4. </h1> -->
           
@@ -151,18 +155,35 @@
 
     </main>
     
-<!--  <footer class="footer">
-        <div class="footer__container">
-            <h3> Logo </a></h3>
-            <nav>
-                <ul class="footer__container-navbar">
-                    <li> Quiénes somos </a></li>
-                    <li> Contacto </a></li>
-                    <li>  Ubicación </a></li>
+    <footer class="footer">
+        <div class="footer__container"> 
+            <div>
+                <h4>Sobre nosotros</h4>
+                <ul class="footer__container-list">
+                    <li> <a href="">Quiénes somos</a></li>
+                    <li> <a href=""> Contacto </a></li>
+                    <li><a href=""> Ayuda </a></li>
                 </ul>
-           </div>
-        </footer>
-     --> 
+            </div>
+            <div>
+                <h4>Comunidad</h4>
+                <ul class="footer__container-list">
+                    <li> <a href="">Blog</a></li>
+                    <li> <a href=""> Preguntas frecuentes </a></li>
+                    <li><a href=""> Suscríbete </a></li>
+                </ul>
+            </div>
+            <div>
+                <h3> Conviértete en un experto de espectáculos </h3>
+                <!-- íconos de redes sociales -->
+                <div class="footer__container-rrss">
+                    <a href="" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="" class="twitter"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -5,42 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Mis favoritos </title>
 
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../Assets/ícono final página web.png" type="image/x-icon">
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+
 </head>
 <body>
-    <section>
-        <header class="header">
-            <div class="header__container">
-                <h3> <a href="./index.html"> Logo </a></h3>
-                <nav>
-                    <!-- desktop -->
-                    <ul class="header__container-navbar">
-                        <li> <a href="../index.html"> Volver al incio </a></li>
-                        <li> <a href="../Pages/Tendencias.html"> Tendencias</a></li>
-                        <li> <a href="../Pages/Noticias.html"> Noticias</a></li>
-                        <li> <a href="../Pages/Crearcuenta.html"> Crear cuenta </a></li>
-                        <li> <a href="../Pages/misfavoritos.html"> Mis favoritos </a></li>
-                    </ul>
-
-                       <!-- <div class="header__container-navbar-mobile">
-                    <span> <a href="../Pages/Tendencias.html"></a> Tendencias </span>
-                    <span> <a href="../Pages/Noticias.html"></a> Noticias </span>
-                    <span> <a href="../Pages/Crearcuenta.html"></a> Crear cuenta </span>
-                    <span> <a href="../Pages/misfavoritos.html"></a> Mis favoritos</span>
-                </div> -->
-                
-                <span> <img src="../Assets/Menú responsive mobile - resize.png" alt="ícono menú">
-                </nav>
+  <header class="header">
+    <div class="header__container">
+        <h3> <a href="../index.html"> Mogle </a></h3>
+        <!-- Menú de navegación se representa nav, luego ul. -->
+        <nav>
+            <!-- desktop -->
+            <ul class="header__container-navbar">
+                <li> <a href="../index.html"> Volver al incio </a></li>
+                <li> <a href="../Pages/Tendencias.html"> Tendencias</a></li>
+                <li> <a href="../Pages/Noticias.html"> Noticias</a></li>
+                <li> <a href="../Pages/Crearcuenta.html"> Crear cuenta </a></li>
+                <li> <a href="../Pages/misfavoritos.html"> Mis favoritos </a></li>
+            </ul>
+             
+            <!-- mobile -->
+            <div class="header__container-navbar-mobile"> 
+                <i class="bi bi-list"></i>
+                <ul>
+                    <li> <a href="../Pages/Tendencias.html"> Tendencias</a></li>
+                    <li> <a href="../Pages/Noticias.html"> Noticias</a></li>
+                    <li> <a href="../Pages/Crearcuenta.html"> Crear cuenta </a></li>
+                    <li> <a href="../Pages/misfavoritos.html"> Mis favoritos </a></li>
+                </ul>
             </div>
-        </header>
-    </section>
+        </nav>
+    </div>
+</header>
 
     <main>
-        <section class="bg-danger-subtle text-black bg-gradiente container-fluid" > 
-            <h3 class="fs.3">Mis favoritos</h3>
-        </section>
+        <!-- <section class="bg-danger-subtle text-black bg-gradiente container-fluid" >
+            -->
+        
 
         <section>
             <div id="carouselExampleCaptions" class="carousel slide">
@@ -88,16 +95,33 @@
 
 
     <footer class="footer">
-        <!-- hacerlo con flex  -->
-       <div class="footer__container">
-        <h3> Logo </a></h3>
-        <nav>
-            <ul class="footer__container-navbar">
-                <li> Quiénes somos </a></li>
-                <li> Contacto </a></li>
-                <li>  Ubicación </a></li>
-            </ul>
-       </div>
-    </footer>
+      <div class="footer__container"> 
+          <div>
+              <h4>Sobre nosotros</h4>
+              <ul class="footer__container-list">
+                  <li> <a href="">Quiénes somos</a></li>
+                  <li> <a href=""> Contacto </a></li>
+                  <li><a href=""> Ayuda </a></li>
+              </ul>
+          </div>
+          <div>
+              <h4>Comunidad</h4>
+              <ul class="footer__container-list">
+                  <li> <a href="">Blog</a></li>
+                  <li> <a href=""> Preguntas frecuentes </a></li>
+                  <li><a href=""> Suscríbete </a></li>
+              </ul>
+          </div>
+          <div>
+              <h3> Conviértete en un experto de espectáculos </h3>
+              <!-- íconos de redes sociales -->
+              <div class="footer__container-rrss">
+                <a href="" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                <a href="" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="" class="twitter"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+      </div>
+  </footer>
 </body>
 </html>
