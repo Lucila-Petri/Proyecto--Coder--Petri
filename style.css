@@ -429,12 +429,12 @@ justify-content: space-around;
     .footer { 
         display: flex;
     }
-
-    }
-
     .footer__container { 
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+
 
 @media (mid-width: 992px) {
     .visto_card { 
